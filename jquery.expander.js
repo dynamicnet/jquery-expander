@@ -107,7 +107,7 @@
           if (defined.beforeExpand) {o.beforeExpand.call(thisEl);}
           $thisDetails[o.expandEffect](o.expandSpeed, function() {
             $thisDetails.css({zoom: ''});
-            if (defined.beforeExpand) {o.afterExpand.call(thisEl);}
+            if (defined.afterExpand) {o.afterExpand.call(thisEl);}
             delayCollapse(o, $thisDetails, thisEl);
           });
         }
